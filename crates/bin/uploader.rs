@@ -29,7 +29,7 @@ pub async fn login(user_cookie: PathBuf) -> Result<()> {
     let client = Credential::new();
     let selection = Select::with_theme(&ColorfulTheme::default())
         .with_prompt("选择一种登录方式")
-        .default(1)
+        .default(4)
         .item("账号密码")
         .item("短信登录")
         .item("扫码登录")
